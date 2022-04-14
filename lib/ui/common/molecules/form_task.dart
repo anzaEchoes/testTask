@@ -65,7 +65,7 @@ class FormText extends StatelessWidget {
             event: () {
               save(context);
             },
-            text: "Crear",
+            text: tar == null ? "Add Task" : "Edit Task",
             colorBackground: Colors.blue,
             colorFont: Colors.white,
             radius: 30,

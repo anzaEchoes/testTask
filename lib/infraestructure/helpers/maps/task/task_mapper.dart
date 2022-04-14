@@ -39,10 +39,10 @@ class TaskMapper implements BaseMapper<Task> {
   Map<String, dynamic> toJson(Task task) => {
         "title": task.title,
         "is_completed": task.isCompleted ?? "0",
-        "comments": task.comments ?? "",
-        "description": task.description ?? "",
-        "tags": task.tags ?? "",
-        "token": task.token ?? "",
-        "id": task.id ?? "",
+        "comments": task.comments,
+        "description": task.description,
+        "tags": task.tags,
+        "token": task.token,
+        "id": task.id,
       };
 }
